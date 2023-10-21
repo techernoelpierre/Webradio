@@ -9,8 +9,21 @@
     width: 500px;
     height: 400px;
     position: relative;
-    box-shadow: 0px 0px 10px 5px #FF333F;
     border: 2px solid #FF333F;
+    box-shadow: inset 0px 0px 10px 5px #000;
+}
+.form::before{
+    content: "";
+    width: 540px;
+    height: 440px;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: -1;
+    box-shadow: 0px 0px 10px 5px #FF333F;
+    
 }
 .form > * {
     margin-bottom: 20px;
@@ -25,6 +38,7 @@
     padding: 0 10px;
 }
 input:focus{
+    border: transparent;
     outline: solid 2px #FF333F;
 }
 .inputBtn{
